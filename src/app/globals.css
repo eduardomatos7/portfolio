@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientAnimation {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+.animated-border {
+  position: relative;
+}
+
+.animated-border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  top: 1px;
+  background: linear-gradient(to right, #0B00A9, #0B00A9, #449BFF, #0B00A9, #449BFF, #0B00A9, #0B00A9);
+  background-size: 400% 100%;
+  animation: gradientAnimation 4s linear infinite;
+  z-index: -1;
+  border-radius: .75rem;
+}
