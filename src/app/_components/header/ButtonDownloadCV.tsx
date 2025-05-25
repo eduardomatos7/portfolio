@@ -17,7 +17,7 @@ function ButtonDownloadCV({ children }: ButtonProps) {
                     px-2 py-1 m-[1px]
                     rounded-lg
                     hover:bg-[#353660]
-                    font-poppins font-medium text-sm
+                    font-poppins font-medium text-xs md:text-sm text-white
                     transition-all duration-300 ease-linear">
                     {children}
                 </button>
