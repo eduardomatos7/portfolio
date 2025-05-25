@@ -31,7 +31,7 @@ function Header() {
                 ></div>
             )}
             <header className="
-                h-16 min-w-fit px-2
+                h-16 min-w-fit w-full
                 gap-[35px] justify-center  
                 bg-[#121237] text-white font-poppins
                 rounded-b-xl animated-border">
@@ -60,7 +60,7 @@ function Header() {
                         Baixar CV
                     </ButtonDownloadCV>
                 </nav>
-                <nav className='flex justify-between h-16 items-center w-screen max-w-72 md:hidden' >
+                <nav className='flex justify-between h-16 items-center w-screen max-w-72 md:hidden px-6' >
                     <div className='md:hidden  flex gap-2 text-white justify-center items-center '>
                         <CodeXml size={20} />
                         EM
