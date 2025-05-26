@@ -11,8 +11,8 @@ function Header() {
     const delayItemsMenu = `transform transition-all duration-300 ease-out ${openMenu ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`
 
     const navItems = [
-        { path: '/', label: 'Início', icon: <CodeXml size={20} /> },
-        { path: '/skills', label: 'Habilidades', icon: <Wrench size={20} /> },
+        { path: '#home', label: 'Início', icon: <CodeXml size={20} /> },
+        { path: '#skills', label: 'Habilidades', icon: <Wrench size={20} /> },
         { path: '/projects', label: 'Projetos', icon: <Box size={20} /> },
         { path: '/education', label: 'Formação', icon: <GraduationCap size={20} /> },
         { path: '/resume', label: 'Resumo', icon: <FileUser size={20} /> },
