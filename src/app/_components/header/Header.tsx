@@ -60,7 +60,7 @@ function Header() {
                         Baixar CV
                     </ButtonDownloadCV>
                 </nav>
-                <nav className='flex justify-between h-16 items-center w-screen max-w-72 md:hidden px-6' >
+                <nav className='flex justify-between h-16 items-center w-screen max-w-72 sm:max-w-[30rem] md:hidden px-6' >
                     <div className='md:hidden  flex gap-2 text-white justify-center items-center '>
                         <CodeXml size={20} />
                         EM

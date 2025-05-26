@@ -4,7 +4,7 @@ import HomePage from "./_components/HomePage"
 function Home() {
   return (
     <>
-      <div className=" max-w-72 md:max-w-[51rem] mx-auto">
+      <div className=" max-w-72 sm:max-w-[30rem] md:max-w-[51rem] mx-auto">
         <Header />
         <main>
           <HomePage />
