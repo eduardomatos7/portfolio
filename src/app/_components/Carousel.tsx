@@ -22,7 +22,7 @@ function Carousel() {
     return (
         <section className='max-w-96 md:max-w-[51rem] flex flex-col justify-center h-40'>
             <div className='w-full text-center'><p className='text-gray-400 text-lg font-light uppercase mb-5'>Techs I Work</p></div>
-            <div className="relative w-72 md:w-[51rem] overflow-hidden">
+            <div className="relative max-w-72 md:max-w-[51rem] overflow-hidden">
                 <div className="flex w-max animate-carousel gap-2">
                     {[...imageTechs, ...imageTechs].map(({ id, tech, alt }, idx) => (
                         <div className='
