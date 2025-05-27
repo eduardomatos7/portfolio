@@ -11,7 +11,8 @@ export const medicAppProject = {
     description: "Aplicativo para verificar interações entre medicamentos.",
     srcImage: "/projects/cover/medicappImage.png",
     deploy: "#",
-    github: "https://github.com/RicardoMorato/MedicApp"
+    github: "https://github.com/RicardoMorato/MedicApp",
+    platforms: "Mobile"
 }
 export const KanbanProject = {
     technologies: [
@@ -25,5 +26,6 @@ export const KanbanProject = {
     description: "Quadro kanban para gerenciar tarefas.",
     srcImage: "/projects/cover/KanbanTODO.png",
     deploy: "https://board-kanban-sigma.vercel.app/",
-    github: "https://github.com/eduardomatos7/To-do-List-Kanban"
+    github: "https://github.com/eduardomatos7/To-do-List-Kanban",
+    platforms: "Front-end"
 }

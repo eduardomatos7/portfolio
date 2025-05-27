@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { propsProject } from '../interfaces/projectCards';
 
 function ProjectCard({ project }: { project: propsProject }) {
-    const { technologies, title, description, srcImage, github, deploy } = project
+    const { technologies, title, description, srcImage, github, deploy, platforms } = project
     return (
         <div className=' max-h-72 lg:max-h-80 max-w-56 md:max-w-[33%] grid grid-rows-[4fr_1fr_4fr] border-[1px] border-gray-50'>
             <div className='flex overflow-hidden border-b-[1px] items-center'>
@@ -22,7 +22,8 @@ function ProjectCard({ project }: { project: propsProject }) {
             </div>
             <div className=' flex flex-col justify-between py-2 gap-2 px-4 overflow-hidden'>
                 <div className='flex flex-col gap-1'>
-                    <h2 className='font-medium font-inter text-base md:text-[17px]'>{title}</h2>
+                    <h2 className='flex items-end font-medium font-inter text-base md:text-[17px]'>{title}<span className='ml-2 text-xs mb-[2px] text-[#77A2FF] font-inter font-extralight'>{platforms}</span></h2>
+
                     <p className='text-xs md:text-sm font-inter text-gray-400 font-light'>{description}</p>
                 </div>
                 <div className='flex gap-4 mb-2'>
