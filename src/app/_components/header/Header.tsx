@@ -13,7 +13,7 @@ function Header() {
     const navItems = [
         { path: '#home', label: 'Início', icon: <CodeXml size={20} /> },
         { path: '#skills', label: 'Habilidades', icon: <Wrench size={20} /> },
-        { path: '/projects', label: 'Projetos', icon: <Box size={20} /> },
+        { path: '#projects', label: 'Projetos', icon: <Box size={20} /> },
         { path: '/education', label: 'Formação', icon: <GraduationCap size={20} /> },
         { path: '/resume', label: 'Resumo', icon: <FileUser size={20} /> },
     ];
