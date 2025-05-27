@@ -4,6 +4,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import Image from "next/image";
 import Carousel from "./Carousel";
 import SkillsPage from "./SkillsPage";
+import Projects from "./ProjectContent";
 
 function HomePage() {
     return (
@@ -89,6 +90,9 @@ function HomePage() {
             <section id="skills" className=" mt-16 md:mt-32 pb-10 min-h-screen">
                 <SkillsPage />
             </section >
+            <section id="projects" className="mt-16 md:mt-32 pb-10 min-h-screen">
+                <Projects />
+            </section>
         </>
     );
 }
