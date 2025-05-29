@@ -17,12 +17,12 @@ function ProjectCard({ project }: { project: propsProject }) {
             </div>
             <div className='border-b-[1px] flex gap-3 md:gap-5 px-3 justify-center items-center overflow-hidden'>
                 {technologies.map(({ tech, width, alt, id }) => (
-                    <Image className="object-contain max-h-4 md:max-h-6" src={tech} width={width} height={20} alt={alt} key={id} />
+                    <Image className="object-contain max-h-4 md:max-h-6 animatedImage" src={tech} width={width} height={20} alt={alt} key={id} />
                 ))}
             </div>
             <div className=' flex flex-col justify-between py-2 gap-2 px-4 overflow-hidden'>
                 <div className='flex flex-col gap-1'>
-                    <h2 className='flex items-end font-medium font-inter text-base md:text-[17px]'>{title}<span className='ml-2 text-xs mb-[2px] text-[#77A2FF] font-inter font-extralight'>{platforms}</span></h2>
+                    <h2 className='flex md:items-end font-medium font-inter text-base md:text-[17px]'>{title}<span className='ml-2 mt-[2px] text-[10px] md:text-xs md:mb-[2px] text-[#77A2FF] font-inter font-extralight'>{platforms}</span></h2>
 
                     <p className='text-xs md:text-sm font-inter text-gray-400 font-light'>{description}</p>
                 </div>

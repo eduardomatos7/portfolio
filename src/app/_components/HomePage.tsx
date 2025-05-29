@@ -5,6 +5,7 @@ import Image from "next/image";
 import Carousel from "./Carousel";
 import SkillsPage from "./SkillsPage";
 import Projects from "./ProjectContent";
+import EducationPage from "./EducationPage/EducationPage";
 
 function HomePage() {
     return (
@@ -87,12 +88,15 @@ function HomePage() {
                 </div>
             </section>
             <Carousel />
-            <section id="skills" className=" mt-16 md:mt-32 pb-10 min-h-screen">
-                <SkillsPage />
-            </section >
             <section id="projects" className="mt-16 md:mt-32 pb-10 min-h-screen">
                 <Projects />
             </section>
+            <section id="skills" className=" mt-16 md:mt-32 pb-10 min-h-screen">
+                <SkillsPage />
+            </section >
+            <section id="education" className=" mt-16 md:mt-32 pb-10 min-h-screen">
+                <EducationPage />
+            </section >
         </>
     );
 }
