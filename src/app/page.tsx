@@ -1,3 +1,4 @@
+import Footer from "./_components/Footer"
 import Header from "./_components/header/Header"
 import HomePage from "./_components/HomePage"
 
@@ -10,6 +11,7 @@ function Home() {
           <HomePage />
         </main>
       </div>
+      <Footer />
     </>
   )
 }
