@@ -34,7 +34,7 @@ function HomePage() {
                         desenvolvedor de Software!
                     </h1>
                     <div>
-                        <p className="font-extralight font-poppins text-white text-justify pr-3 text-[13px] sm:text-base md:text-base lg:text-lg">
+                        <p className="font-extralight font-poppins text-white pr-3 text-[13px] sm:text-base md:text-base lg:text-lg">
                             Como desenvolvedor Full-Stack e estudante de <b>Sistemas de
                                 Informação</b> no CIn/UFPE, meu foco é usar tecnologia para resolver
                             problemas e entregar uma boa solução de impacto real.
@@ -94,7 +94,7 @@ function HomePage() {
             <section id="skills" className=" mt-16 md:mt-32 pb-10 min-h-screen">
                 <SkillsPage />
             </section >
-            <section id="education" className=" mt-16 md:mt-32 pb-10 min-h-screen">
+            <section id="education" className=" mt-16 md:mt-32 min-h-screen">
                 <EducationPage />
             </section >
         </>
