@@ -6,7 +6,7 @@ import React from 'react'
 function ButtonLink({ children, certificate, certificateLink }: buttonInputs) {
     return (
         <div className='
-                bg-gradient-to-t from-[#3b82f6] to-white 
+                bg-gradient-to-t from-[#3b82f6] to-white  h-fit
                 rounded-md md:rounded-lg cursor-pointer hover:bg-gradient-to-t hover:from-orange-500 hover:to-white 
             '>
             <div className='
