@@ -19,9 +19,10 @@ function CardDescription({ educationInfo, certificate }: educationInfo) {
         border-[1px] border-[#ABB2BF] rounded-lg
         bg-gradient-to-b from-[#0a268b] to-[#343e5d]
         w-full max-h-[35rem] lg:max-h-[31rem]
-        '>
+        '
+            data-aos="flip-left" data-aos-anchor-placement="top-bottom" data-aos-once="false" data-aos-duration="2000">
             <div className='flex flex-col font-poppins text-white gap-2'>
-                <Image className="h-9 md:h-11 w-9 md:w-11 rounded-md md:rounded-lg " src={logo} width={100} height={100} alt={alt} />
+                <Image className="h-9 md:h-11 w-9 md:w-11 rounded-md md:rounded-lg object-contain" src={logo} width={100} height={100} alt={alt} />
                 <div>
                     <h1 className=' text-base md:text-lg font-poppins font-semibold leading-tight'>{titleAcademic}</h1>
                     <p className=' text-xs md:text-sm font-extralight pb-3 pt-2'>{educationalInstitution}</p>
