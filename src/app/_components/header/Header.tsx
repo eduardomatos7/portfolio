@@ -10,10 +10,11 @@ function Header() {
     const [openMenu, setOpenMenu] = useState<boolean>(false)
     const pathname = usePathname();
     const delayItemsMenu = `transform transition-all duration-300 ease-out ${openMenu ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`
-    const addressRoot = "http://localhost:3000/"
+    const addressRoot = "https://portfolio-dun-five-gswcevklyd.vercel.app/"
+    // Mudar esse endereço depois que mudar o domínio
 
     const navItems = [
-        { path: '/', label: 'Início', icon: <CodeXml size={20} /> },
+        { path: "", label: 'Início', icon: <CodeXml size={20} /> },
         { path: '#projects', label: 'Projetos', icon: <Box size={20} /> },
         { path: '#skills', label: 'Habilidades', icon: <Wrench size={20} /> },
         { path: '#education', label: 'Formação', icon: <GraduationCap size={20} /> },
