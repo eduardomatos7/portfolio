@@ -25,7 +25,7 @@ export const onebitcodeInfo = {
 };
 
 export const ifInfo = {
-    logo: "/education/ifLogo.png",
+    logo: "/education/IfLogo.png",
     alt: "LogoIf",
     titleAcademic: "Curso Técnico em Informática",
     educationalInstitution: "Instituto Federal Baiano - Campus Lapa",

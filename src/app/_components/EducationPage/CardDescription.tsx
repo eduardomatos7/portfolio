@@ -18,7 +18,7 @@ function CardDescription({ educationInfo, certificate }: educationInfo) {
         grid relative p-3 overflow-hidden
         border-[1px] border-[#ABB2BF] rounded-lg
         bg-gradient-to-b from-[#0a268b] to-[#343e5d]
-        w-full max-h-[35rem] lg:max-h-[31rem]
+        w-[85%] max-h-[35rem] lg:max-h-[31rem]
         '
             data-aos="flip-left" data-aos-anchor-placement="top-bottom" data-aos-once="false" data-aos-duration="2000">
             <div className='flex flex-col font-poppins text-white gap-2'>
