@@ -14,22 +14,22 @@ function HomeSection() {
                     "
         >
             <div className="flex flex-col md:max-w-[28rem] lg:max-w-[29rem]" data-aos="fade-down">
-                <div className="text-[17px] sm:text-xl md:text-2xl lg:text-[26px] mb-1 font-poppins text-white font-extralight ">
+                <div className="text-xl sm:text-xl md:text-2xl lg:text-[26px] mb-1 font-poppins text-white font-extralight ">
                     Olá!👋 Eu sou{" "}
                 </div>
-                <h1 className="text-slate-100 text-[17px] font-poppins sm:text-xl md:text-2xl lg:text-[28px] font-bold" >
+                <h1 className="text-slate-100 text-xl font-poppins sm:text-xl md:text-2xl lg:text-[28px] font-bold" >
                     Eduardo Matos,
                 </h1>
                 <h1
                     className="
-                text-[19px] sm:text-2xl md:text-3xl lg:text-[32px] font-black font-poppins
+                text-[22px] sm:text-2xl md:text-3xl lg:text-[32px] font-black font-poppins
                 bg-[linear-gradient(to_bottom,_#fff,_#fff,_#fff,_#A6CCF7,_#0055F2,_#003DBF,_#003DBF)] bg-clip-text 
                 text-transparent"
                 >
                     desenvolvedor de Software!
                 </h1>
                 <div>
-                    <p className="font-extralight font-poppins text-white pr-3 text-[13px] sm:text-base md:text-base lg:text-lg">
+                    <p className="font-extralight font-poppins text-white text-base sm:text-base md:text-base lg:text-lg">
                         Como desenvolvedor Full-Stack e estudante de <b>Sistemas de
                             Informação</b> no CIn/UFPE, meu foco é usar tecnologia para resolver
                         problemas e entregar uma boa solução de impacto real.
@@ -40,7 +40,7 @@ function HomeSection() {
                         href="https://github.com/eduardomatos7"
                         target="_blank"
                         className="
-                            flex w-5 h-5 sm:w-7 sm:h-7 p-1 sm:p-0 cursor-pointer rounded-full bg-transparent border-[1px]
+                            flex w-6 h-6 sm:w-7 sm:h-7 p-1 sm:p-0 cursor-pointer rounded-full bg-transparent border-[1px]
                             border-white justify-center items-center" data-aos="flip-left" data-aos-delay="300"
                     >
                         <FaGithub color="#fff" />
@@ -49,7 +49,7 @@ function HomeSection() {
                         href="https://www.linkedin.com/in/eduardo-matos07"
                         target="_blank"
                         className="
-                            flex w-5 h-5 sm:w-7 sm:h-7 p-1 sm:p-0 cursor-pointer rounded-full bg-transparent border-[1px]
+                            flex w-6 h-6 sm:w-7 sm:h-7 p-1 sm:p-0 cursor-pointer rounded-full bg-transparent border-[1px]
                             border-white justify-center items-center" data-aos="flip-left" data-aos-delay="500"
                     >
                         <FaLinkedin color="#fff" />
@@ -57,14 +57,14 @@ function HomeSection() {
                     <a
                         href="mailto:emfs@cin.ufpe.br"
                         target="_blank"
-                        className="flex w-5 h-5 sm:w-7 sm:h-7 p-1 sm:p-0 cursor-pointer rounded-full bg-transparent border-[1px] border-white justify-center items-center"
+                        className="flex w-6 h-6 sm:w-7 sm:h-7 p-1 sm:p-0 cursor-pointer rounded-full bg-transparent border-[1px] border-white justify-center items-center"
                         data-aos="flip-left" data-aos-delay="700">
                         <MdOutlineMailOutline color="#fff" />
                     </a>
                     <a
                         href="https://wa.me/77999759806"
                         target="_blank"
-                        className="flex w-5 h-5 sm:w-7 sm:h-7 p-1 sm:p-0 cursor-pointer rounded-full bg-transparent border-[1px] border-white justify-center items-center"
+                        className="flex w-6 h-6 sm:w-7 sm:h-7 p-1 sm:p-0 cursor-pointer rounded-full bg-transparent border-[1px] border-white justify-center items-center"
                         data-aos="flip-left" data-aos-delay="900" >
                         <FaWhatsapp color="#fff" />
                     </a>

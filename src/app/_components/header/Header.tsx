@@ -10,7 +10,8 @@ function Header() {
     const [openMenu, setOpenMenu] = useState<boolean>(false)
     const pathname = usePathname();
     const delayItemsMenu = `transform transition-all duration-300 ease-out ${openMenu ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`
-    const addressRoot = "https://portfolio-dun-five-gswcevklyd.vercel.app/"
+    const addressRootLocal = "http://localhost:3000/"
+    const addressRootDeploy = "http://eduardomatos.vercel.app/"
     // Mudar esse endereço depois que mudar o domínio
 
     const navItems = [
@@ -47,7 +48,7 @@ function Header() {
 
 
     return (
-        <div className='fixed top-0 z-10 md:w-[51rem]'>
+        <div className='fixed top-0 w-[90%] z-10 md:w-[51rem]'>
             <div className="flex justify-center relative">
                 {openMenu && (
                     <div
@@ -60,7 +61,7 @@ function Header() {
                     initial={{ y: 0 }}
                     transition={{ duration: 0.25 }}
                     className="
-                h-16 min-w-fit w-full
+                h-16 w-full
                 gap-[35px] justify-center
                 bg-[#121237] text-white font-poppins
                 rounded-b-xl animated-border">
@@ -73,7 +74,7 @@ function Header() {
                         {navItems.map((item) => (
                             <Link
                                 key={item.path}
-                                href={addressRoot + item.path}
+                                href={addressRootLocal + item.path}
                                 className={`
                                 flex flex-row gap-2 items-center 
                                 font-poppins font-light text-sm 
@@ -91,7 +92,7 @@ function Header() {
                     </nav>
 
                     <nav
-                        className='flex justify-between bg-[#121237] h-16 items-center w-screen max-w-72 sm:max-w-[30rem] md:hidden px-6 rounded-b-xl' >
+                        className='flex justify-between bg-[#121237] h-16 items-center w-full sm:max-w-[30rem] md:hidden px-6 rounded-b-xl' >
                         <div className='md:hidden flex gap-2 text-white justify-center items-center '>
                             <CodeXml size={20} />
                             EM
@@ -127,7 +128,7 @@ function Header() {
                             style={{ transitionDelay: `${100 + index * 100}ms` }}
                         >
                             <Link
-                                href={addressRoot + item.path}
+                                href={addressRootLocal + item.path}
                                 className={`flex gap-2 
                                 font-light text-sm text-white
                                 ${pathname === item.path ? "text-[#5C96FF]" : ""} 

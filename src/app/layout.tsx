@@ -45,7 +45,7 @@ export default function RootLayout({
           background: "linear-gradient(to bottom, #010028 0%, #122152 41%, #07174A 68%, #010028 100%)"
         }}
       >
-        <div className="flex justify-center max-w-72 sm:max-w-[30rem] md:max-w-[51rem] mx-auto overflow-hidden">
+        <div className="flex justify-center max-w-[90%] sm:max-w-[30rem] md:max-w-[51rem] mx-auto overflow-hidden">
           <Header />
           {children}
         </div>

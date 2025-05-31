@@ -8,7 +8,7 @@ function Projects() {
     return (
         <div>
             <TitlePage title="Projetos" />
-            <p className='text-white text-sm md:text-base font-light font-inter mt-5 text-center' data-aos="fade-up">
+            <p className='text-gray-400 text-base md:text-base font-light font-inter mt-5 text-left' data-aos="fade-up">
                 Confira meus principais projetos desenvolvidos,
                 tanto no front-end quanto no back-end. Ao clicar no card, você terá acesso a mais detalhes sobre cada projeto.
             </p>
