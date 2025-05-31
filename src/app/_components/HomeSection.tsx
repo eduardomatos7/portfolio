@@ -10,7 +10,7 @@ function HomeSection() {
             className="
                     grid md:grid-cols-[3fr_2fr] w-full 
                     max-w-[51rem] items-center justify-between justify-items-center md:justify-items-start
-                    mt-24 md:mt-10 md:py-5
+                    mt-24 md:mt-12 md:py-5
                     "
         >
             <div className="flex flex-col md:max-w-[28rem] lg:max-w-[29rem]" data-aos="fade-down">
@@ -70,11 +70,12 @@ function HomeSection() {
                     </a>
                 </div>
             </div>
-            <div className="w-52 sm:w-72 md:w-full" data-aos="fade-right" >
+            <div className="relative w-52 sm:w-72 md:w-[80%] md:mb-10 md:ml-7" data-aos="fade-right" >
+                <div className='absolute h-[40%] w-[40%] blur-3xl  bg-gradient-to-tr from-[#8680C4] from-40% to-transparent  -z-20  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'></div>
                 <Image
-                    src="/Photo.png"
-                    width={400}
-                    height={400}
+                    src="/ImgHomePortfolio.png"
+                    width={1000}
+                    height={1000}
                     quality={100}
                     priority={true}
                     className="w-full"
