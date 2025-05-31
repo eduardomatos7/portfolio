@@ -43,7 +43,8 @@ html {
   z-index: -1;
   border-radius: 0.75rem;
 }
-
+.animated-border-divider::before {
+}
 @keyframes carousel {
   from {
     transform: translateX(0%);
@@ -58,8 +59,18 @@ html {
 }
 
 .animated-border-divider::after {
-  height: 1.5px;
-  animation: gradientAnimation 6s linear infinite alternate;
+  height: 1px;
+  animation: borderGrowing 2s ease-out,
+    gradientAnimation 4s linear infinite alternate;
+}
+
+@keyframes borderGrowing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .bg-gradient-custom {

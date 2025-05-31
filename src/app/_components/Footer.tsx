@@ -13,7 +13,7 @@ function Footer() {
                             `
     return (
         <footer className='flex flex-col gap-3 px-3 md:px-10 py-5 sm:grid sm:grid-cols-3 h-max w-full bg-[#161654] font-poppins text-white'>
-            <div className='md:flex justify-center md:h-[84px] hidden'>
+            <div className='sm:flex justify-center md:h-[84px] hidden'>
                 <p className={styleContact}><IoLocationOutline /> Recife, Pernambuco</p>
             </div>
             <div className='flex justify-center'>
@@ -42,8 +42,8 @@ function Footer() {
                 </div>
             </div>
             <div className='h-[1px] w-full col-span-3 bg-gray-400 my-5' />
-            <div className='flex md:col-span-3 justify-center px-3 md:px-0'>
-                <p className='flex gap-1 md:items-center text-xs md:text-sm'>
+            <div className='flex sm:col-span-3 justify-center px-3 sm:px-auto'>
+                <p className='flex gap-1 justify-center md:items-center text-xs md:text-sm'>
                     <MdCopyright className='mt-[1px] md:mb-[2px]' />
                     2025 Eduardo Matos | Todos os direitos reservados.
                 </p>

@@ -9,6 +9,6 @@ export interface propsProject {
     description: string,
     srcImage: string,
     github: string,
-    deploy: string,
+    deploy?: string | undefined,
     platforms: string
 }
