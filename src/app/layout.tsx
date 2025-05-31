@@ -50,7 +50,8 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
-        <AosInit />
+
+        <AosInit /> {/* Esse Aos quebra o layout no mobile, por isso se utiliza o overflow hidden acima*/}
 
       </body>
     </html>

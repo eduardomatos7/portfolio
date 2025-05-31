@@ -74,7 +74,7 @@ function Header() {
                         {navItems.map((item) => (
                             <Link
                                 key={item.path}
-                                href={addressRootLocal + item.path}
+                                href={addressRootDeploy + item.path}
                                 className={`
                                 flex flex-row gap-2 items-center 
                                 font-poppins font-light text-sm 
@@ -128,7 +128,7 @@ function Header() {
                             style={{ transitionDelay: `${100 + index * 100}ms` }}
                         >
                             <Link
-                                href={addressRootLocal + item.path}
+                                href={addressRootDeploy + item.path}
                                 className={`flex gap-2 
                                 font-light text-sm text-white
                                 ${pathname === item.path ? "text-[#5C96FF]" : ""} 
