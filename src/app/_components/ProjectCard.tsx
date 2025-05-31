@@ -7,12 +7,14 @@ import { propsProject } from '../interfaces/projectCards';
 function ProjectCard({ project }: { project: propsProject }) {
     const { technologies, title, description, srcImage, github, deploy, platforms } = project
     return (
-        <div className=' max-h-72 lg:max-h-80 max-w-56 md:max-w-[33%] grid grid-rows-[4fr_1fr_4fr] border-[1px] border-gray-50 bg-white/5'
+        <div className=' max-h-72 lg:max-h-80 max-w-56 md:max-w-[33%] grid grid-rows-[5fr_1fr_4fr] border-[1px] border-gray-50 bg-white/5'
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom">
-            <div className='flex overflow-hidden border-b-[1px] items-center'>
+            <div className='flex overflow-hidden border-b-[1px] items-center shrink-0'>
                 <Image
-                    className="w-full" src={srcImage}
+                    className="w-full h-full object-cover"
+                    src={srcImage}
+                    priority
                     width={200}
                     height={200}
                     alt={title} />
@@ -29,13 +31,15 @@ function ProjectCard({ project }: { project: propsProject }) {
                     <p className='text-xs md:text-sm font-inter text-gray-400 font-light'>{description}</p>
                 </div>
                 <div className='flex gap-4 mb-2'>
-                    <button
-                        className='py-1 px-3 border-[1px] border-[#77A2FF] rounded-md' >
-                        <a
-                            target="_blank"
-                            href={deploy} className='flex items-center gap-1 font-poppins text-xs md:text-sm text-center'>Deploy <IoRocketOutline />
-                        </a>
-                    </button>
+                    {deploy &&
+                        <button
+                            className='py-1 px-3 border-[1px] border-[#77A2FF] rounded-md' >
+                            <a target="_blank"
+                                href={deploy} className='flex items-center gap-1 font-poppins text-xs md:text-sm text-center'>Deploy <IoRocketOutline />
+                            </a>
+                        </button>
+                    }
+
                     <button>
                         <a href={github}
                             target='_blank'
