@@ -19,7 +19,7 @@ function ProjectCard({ project }: { project: propsProject }) {
             </div>
             <div className='border-b-[1px] flex gap-3 md:gap-5 px-3 justify-center items-center overflow-hidden'>
                 {technologies.map(({ tech, width, alt, id }) => (
-                    <Image className="object-contain max-h-4 md:max-h-6 w-auto animatedImage" src={tech} width={width} height={20} alt={alt} key={id} />
+                    <Image className="object-contain max-h-4 md:max-h-6 w-auto animatedImage" src={tech} width={width} height={20} alt={alt} key={id} priority />
                 ))}
             </div>
             <div className=' flex flex-col justify-between py-2 gap-2 px-4 overflow-hidden'>

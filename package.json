@@ -12,6 +12,7 @@
     "aos": "^2.3.4",
     "ionicons": "^8.0.8",
     "lucide-react": "^0.511.0",
+    "motion": "^12.15.0",
     "next": "15.1.8",
     "normalize.css": "^8.0.1",
     "react": "^19.0.0",

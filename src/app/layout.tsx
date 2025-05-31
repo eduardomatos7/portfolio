@@ -40,12 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable}`}>
       <body
-        className="h-max"
+        className="h-screen bg-repeat-space"
         style={{
           background: "linear-gradient(to bottom, #010028 0%, #122152 41%, #07174A 68%, #010028 100%)"
         }}
       >
-        <div className="flex justify-center max-w-72 sm:max-w-[30rem] md:max-w-[51rem] mx-auto">
+        <div className="flex justify-center max-w-72 sm:max-w-[30rem] md:max-w-[51rem] mx-auto overflow-hidden">
           <Header />
           {children}
         </div>

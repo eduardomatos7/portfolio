@@ -18,11 +18,11 @@ function TechnologiesSkills({ title, technologies }: props) {
             data-aos-duration="300">
             <div className='mt-7 sm:mt-12 md:mt-16 flex justify-center'>
                 <h1 className='text-white text-lg sm:text-xl md:text-2xl font-medium font-inter'>{title}</h1>
-            </div>            <div className='
+            </div>
+            <div className='
             flex flex-wrap w-full justify-center items-center
             overflow-hidden gap-2 lg:gap-4 p-4 h-max
             bg-white bg-opacity-10 rounded-lg
-            shadow-[0_8px_30px_rgb(0,0,0,0.4)]
             transition-all duration-300 ease-in-out'>
                 {technologies.map((tech, index) => (<div className='
                     flex flex-col gap-1 items-center p-2 
@@ -31,7 +31,7 @@ function TechnologiesSkills({ title, technologies }: props) {
                     transition-all duration-300 ease-in-out'
                     key={tech.id}
                 >
-                    <Image className='w-7 sm:w-9 md:w-11 hover:animate-bounce-gentle' src={tech.tech} width={40} height={40} alt={tech.alt} />
+                    <Image className='w-7 sm:w-9 md:w-11  h-7 sm:h-9 md:h-11 hover:animate-bounce-gentle' src={tech.tech} width={40} height={40} alt={tech.alt} />
                     <p className='text-white text-xs'>{tech.alt}</p>
                 </div>
                 ))}
