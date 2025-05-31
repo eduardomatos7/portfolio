@@ -8,7 +8,7 @@ function SkillsPage() {
     <>
       <div>
         <TitlePage title="Habilidades" />
-        <p className='text-gray-400 text-sm md:text-lg font-light font-inter mt-5' data-aos="fade-up">Para as habilidades técnicas e ferramentas eu utilizo:  </p>
+        <p className='text-gray-400 text-base md:text-lg font-light font-inter mt-5' data-aos="fade-up">Para as habilidades técnicas e ferramentas eu utilizo:  </p>
       </div>
       <TechnologiesSkills title="Front-end" technologies={frontend} />
       <TechnologiesSkills title="Back-end" technologies={backend} />

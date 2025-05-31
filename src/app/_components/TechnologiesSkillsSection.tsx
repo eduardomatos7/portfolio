@@ -17,7 +17,7 @@ function TechnologiesSkills({ title, technologies }: props) {
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="300">
             <div className='mt-7 sm:mt-12 md:mt-16 flex justify-center'>
-                <h1 className='text-white text-lg sm:text-xl md:text-2xl font-medium font-inter'>{title}</h1>
+                <h1 className='text-white text-xl sm:text-xl md:text-2xl font-medium font-inter'>{title}</h1>
             </div>
             <div className='
             flex flex-wrap w-full justify-center items-center

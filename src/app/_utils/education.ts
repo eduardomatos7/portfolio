@@ -26,7 +26,7 @@ export const onebitcodeInfo = {
 
 export const ifInfo = {
     logo: "/education/ifLogo.png",
-    alt: "Logo CIn UFPE",
+    alt: "LogoIf",
     titleAcademic: "Curso Técnico em Informática",
     educationalInstitution: "Instituto Federal Baiano - Campus Lapa",
     startDate: "Fev 2019",
