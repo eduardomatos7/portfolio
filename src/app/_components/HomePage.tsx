@@ -9,14 +9,14 @@ function HomePage() {
     return (
         <>
             <HomeSection />
-            <section className="mt-10">
+            <section className="mt-16">
 
                 <Carousel />
             </section>
             <section id="projects" className="mt-16 md:mt-32 pb-10 min-h-screen">
                 <Projects />
             </section>
-            <section id="skills" className=" mt-16 md:mt-32 pb-10 min-h-screen">
+            <section id="skills" className=" mt-16 md:mt-32 pb-10 min-h-screen ">
                 <SkillsPage />
             </section >
             <section id="education" className=" mt-16 md:mt-32 min-h-screen">

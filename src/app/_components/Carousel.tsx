@@ -4,7 +4,7 @@ import { carouselImages } from '../_utils/technologies'
 
 function Carousel() {
     return (
-        <div className='max-w-96 sm:max-w-[30rem] md:max-w-[51rem] flex flex-col justify-center h-35' data-aos="fade-up"
+        <div className='max-w-full sm:max-w-full md:max-w-[51rem] flex flex-col justify-center h-35' data-aos="fade-up"
             data-aos-delay="900" data-aos-anchor-placement="top-bottom">
             <div className='w-full text-center'><p className='text-gray-400 text-sm sm:text-base md:text-lg font-light font-poppins uppercase mb-5'>current technologies</p></div>
             <div className="relative max-w-72 sm:max-w-[30rem] md:max-w-[51rem] ">

@@ -92,7 +92,7 @@ function Header() {
                     </nav>
 
                     <nav
-                        className='flex justify-between bg-[#121237] h-16 items-center w-full sm:max-w-[30rem] md:hidden px-6 rounded-b-xl' >
+                        className='flex justify-between bg-[#121237] h-16 items-center w-full md:hidden px-6 rounded-b-xl' >
                         <div className='md:hidden flex gap-2 text-white justify-center items-center '>
                             <CodeXml size={20} />
                             EM

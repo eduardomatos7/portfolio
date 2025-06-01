@@ -17,12 +17,12 @@ function HomeSection() {
                 <div className="text-xl sm:text-xl md:text-2xl lg:text-[26px] mb-1 font-poppins text-white font-extralight ">
                     Olá!👋 Eu sou{" "}
                 </div>
-                <h1 className="text-slate-100 text-xl font-poppins sm:text-xl md:text-2xl lg:text-[28px] font-bold" >
+                <h1 className="text-slate-100 text-[18px] font-poppins sm:text-xl md:text-2xl lg:text-[28px] font-bold" >
                     Eduardo Matos,
                 </h1>
                 <h1
                     className="
-                text-[22px] sm:text-2xl md:text-3xl lg:text-[32px] font-black font-poppins
+                text-[19.9px] sm:text-2xl md:text-3xl lg:text-[32px] font-black font-poppins
                 bg-[linear-gradient(to_bottom,_#fff,_#fff,_#fff,_#A6CCF7,_#0055F2,_#003DBF,_#003DBF)] bg-clip-text 
                 text-transparent"
                 >
@@ -70,7 +70,7 @@ function HomeSection() {
                     </a>
                 </div>
             </div>
-            <div className="relative w-52 sm:w-72 md:w-[80%] md:mb-10 md:ml-7" data-aos="fade-right" >
+            <div className="relative w-52 sm:w-60 md:w-[80%] md:mb-10 md:ml-7" data-aos="fade-right" >
                 <div className='absolute h-[40%] w-[40%] blur-3xl  bg-gradient-to-tr from-[#8680C4] from-40% to-transparent  -z-20  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'></div>
                 <Image
                     src="/ImgHomePortfolio.png"

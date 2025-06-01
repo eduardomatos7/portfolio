@@ -7,7 +7,7 @@ import { propsProject } from '../interfaces/projectCards';
 function ProjectCard({ project }: { project: propsProject }) {
     const { technologies, title, description, srcImage, github, deploy, platforms } = project
     return (
-        <div className=' h-[28rem] w-[95%] lg:max-h-80  md:max-w-[33%] grid grid-rows-[4fr_1fr_4fr] border-[1px] border-gray-50 bg-white/5 rounded-lg overflow-hidden'
+        <div className=' h-[28rem] w-[85%] sm:w-[60%] lg:max-h-80  md:max-w-[33%] grid grid-rows-[4fr_1fr_4fr] border-[1px] border-gray-50 bg-white/5 rounded-lg overflow-hidden'
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom">
             <div className='flex border-b-[1px] items-center overflow-hidden'>
@@ -26,7 +26,7 @@ function ProjectCard({ project }: { project: propsProject }) {
             </div>
             <div className=' flex flex-col justify-between py-2 gap-2 px-4 overflow-hidden'>
                 <div className='flex flex-col gap-1'>
-                    <h2 className='flex items-center md:items-end font-medium font-inter text-xl md:text-[17px]'>{title}<span className='ml-2 text-sm md:text-xs md:mb-[2px] text-[#77A2FF] font-inter font-extralight'>{platforms}</span></h2>
+                    <h2 className='flex items-center md:items-end font-medium font-inter text-[18px] md:text-[17px]'>{title}<span className='ml-2 text-sm md:text-xs md:mb-[2px] text-[#77A2FF] font-inter font-extralight'>{platforms}</span></h2>
 
                     <p className='text-base md:text-sm font-inter text-gray-400 font-light'>{description}</p>
                 </div>
