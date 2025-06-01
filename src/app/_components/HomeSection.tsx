@@ -78,7 +78,7 @@ function HomeSection() {
                     height={1000}
                     quality={100}
                     priority={true}
-                    className="w-full"
+                    className="w-full animate-bounce-gentle"
                     alt="foto perfil"
                 />
             </div>

@@ -9,7 +9,7 @@ function HomePage() {
     return (
         <>
             <HomeSection />
-            <section className="mt-16">
+            <section className="mt-16 md:mt-10">
 
                 <Carousel />
             </section>
