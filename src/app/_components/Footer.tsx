@@ -4,9 +4,9 @@ import { IoLocationOutline } from 'react-icons/io5'
 import { MdCopyright, MdOutlineLocalPhone, MdOutlineMailOutline } from 'react-icons/md'
 
 function Footer() {
-    const styleContact = `flex gap-2 items-center text-xs md:text-sm`
+    const styleContact = `flex gap-2 items-center text-sm md:text-base`
     const styleSocialIcons = `
-                            flex w-5 h-5 sm:w-7 sm:h-7 p-1 
+                            flex w-7 h-7 sm:w-9 sm:h-9 p-1 
                             sm:p-0 cursor-pointer hover:transform hover:scale-110 
                             transition-transform duration-300 ease-out hover:bg-white/25 
                             bg-white/10 justify-center items-center
@@ -18,7 +18,7 @@ function Footer() {
             </div>
             <div className='flex justify-center'>
                 <div className='flex flex-col gap-2 items-center'>
-                    <p className='text-sm md:text-lg font-extrabold '>Contato</p>
+                    <p className='text-base md:text-lg font-extrabold '>Contato</p>
                     <div className='flex flex-col gap-2 justify-center '>
                         <p className={styleContact}><MdOutlineMailOutline color="#fff" />emfs@cin.ufpe.br</p>
                         <p className={styleContact}><MdOutlineLocalPhone />{`+55 (77) 9 9975-9806`}</p>
@@ -26,18 +26,18 @@ function Footer() {
                 </div>
             </div>
             <div className='flex flex-col gap-2  md:h-[84px] items-center'>
-                <p className='text-sm md:text-lg font-extrabold'>Redes sociais</p>
-                <div className='flex gap-2'>
+                <p className='text-base md:text-lg font-extrabold'>Redes sociais</p>
+                <div className='flex gap-2 '>
                     <a
                         href="https://github.com/eduardomatos7" target="_blank" className={styleSocialIcons}>
-                        <FaGithub color="#fff" />
+                        <FaGithub color="#fff" size={20} />
                     </a>
                     <a href="https://www.linkedin.com/in/eduardo-matos07" target="_blank" className={styleSocialIcons}>
-                        <FaLinkedin color="#fff" />
+                        <FaLinkedin color="#fff" size={20} />
                     </a>
                     <a href="https://wa.me/77999759806" target="_blank" className={styleSocialIcons}
                     >
-                        <FaWhatsapp color="#fff" />
+                        <FaWhatsapp color="#fff" size={20} />
                     </a>
                 </div>
             </div>
