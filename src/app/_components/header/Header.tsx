@@ -5,6 +5,7 @@ import ButtonDownloadCV from './ButtonDownloadCV'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useAnimation, motion } from 'motion/react'
+import Logo from './Logo'
 
 function Header() {
     const [openMenu, setOpenMenu] = useState<boolean>(false)
@@ -15,11 +16,10 @@ function Header() {
     // Mudar esse endereço depois que mudar o domínio
 
     const navItems = [
-        { path: "", label: 'Início', icon: <CodeXml size={20} /> },
         { path: '#projects', label: 'Projetos', icon: <Box size={20} /> },
         { path: '#skills', label: 'Habilidades', icon: <Wrench size={20} /> },
         { path: '#education', label: 'Formação', icon: <GraduationCap size={20} /> },
-        { path: '/resume', label: 'Resumo', icon: <FileUser size={20} /> },
+        { path: '/resume', label: 'Sobre mim', icon: <FileUser size={20} /> },
     ];
     function handleMenu() {
         setOpenMenu(!openMenu)
@@ -67,35 +67,39 @@ function Header() {
                 rounded-b-xl animated-border">
                     <nav className="
                         hidden md:flex
-                        h-16 min-w-fit px-8
-                        gap-[35px] justify-center  
+                        h-16 min-w-fit px-10
+                        gap-[35px] justify-between items-center 
                         bg-[#121237] text-white font-poppins
                         rounded-b-xl ">
-                        {navItems.map((item) => (
-                            <Link
-                                key={item.path}
-                                href={addressRootLocal + item.path}
-                                className={`
+                        <Logo />
+                        <div className='flex gap-9'>
+                            {navItems.map((item) => (
+                                <Link
+                                    key={item.path}
+                                    href={addressRootDeploy + item.path}
+                                    className={`
                                 flex flex-row gap-2 items-center 
                                 font-poppins font-light text-sm 
                                 ${pathname === item.path ? "text-[#5C96FF]" : ""} 
                                 hover:text-[#5C96FF] transition-colors duration-150 ease
                             `}
-                            >
-                                {item.icon} {item.label}
-                            </Link>
-                        ))}
-                        <ButtonDownloadCV>
-                            <Download size={18} className="mr-1" />
-                            Baixar CV
-                        </ButtonDownloadCV>
+                                >
+                                    {item.label}
+                                </Link>
+                            ))}
+                        </div>
+                        <Link href="/assets/pdf/emfs_curriculo.pdf" target='_blank'>
+                            <ButtonDownloadCV>
+                                <Download size={18} className="text-white" />
+                                Baixar CV
+                            </ButtonDownloadCV>
+                        </Link>
                     </nav>
 
                     <nav
                         className='flex justify-between bg-[#121237] h-16 items-center w-full md:hidden px-6 rounded-b-xl' >
                         <div className='md:hidden flex gap-2 text-white justify-center items-center '>
-                            <CodeXml size={20} />
-                            EM
+                            <Logo />
                         </div>
                         <button className='flex text-[14px] items-center gap-1 cursor-pointer font-light'
                             onClick={() => handleMenu()}>
@@ -121,14 +125,28 @@ function Header() {
                     </button>
                 </div>
                 <ul className='flex flex-col gap-6 w-full px-4 mb-6'>
+                    <li key="home" className={delayItemsMenu} style={{ transitionDelay: `${100 + 0 * 100}ms` }}>
+                        <Link
+                            href=""
+                            className={`flex gap-2 
+                                font-light text-sm text-white
+                                hover:text-[#5C96FF] transition-colors
+                                 duration-150 ease`}
+                            onClick={() => setOpenMenu(false)}
+                        >
+                            <CodeXml size={20} />
+                            Início
+                        </Link>
 
+
+                    </li>
                     {navItems.map((item, index) => (
                         <li key={item.path}
                             className={delayItemsMenu}
                             style={{ transitionDelay: `${100 + index * 100}ms` }}
                         >
                             <Link
-                                href={addressRootLocal + item.path}
+                                href={addressRootDeploy + item.path}
                                 className={`flex gap-2 
                                 font-light text-sm text-white
                                 ${pathname === item.path ? "text-[#5C96FF]" : ""} 
@@ -145,10 +163,12 @@ function Header() {
                         className={delayItemsMenu}
                         style={{ transitionDelay: `${100 + navItems.length * 100}ms` }}
                     >
-                        <ButtonDownloadCV>
-                            <Download size={18} className="text-white" />
-                            Baixar CV
-                        </ButtonDownloadCV>
+                        <Link href="/assets/pdf/emfs_curriculo.pdf" target='_blank'>
+                            <ButtonDownloadCV>
+                                <Download size={18} className="text-white" />
+                                Baixar CV
+                            </ButtonDownloadCV>
+                        </Link>
                     </div>
                 </ul>
             </div>

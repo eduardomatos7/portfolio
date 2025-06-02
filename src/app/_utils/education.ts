@@ -1,5 +1,5 @@
 export const cinInfo = {
-    logo: "/education/logoCin.jpg",
+    logo: "/assets/images/education/logoCin.jpg",
     alt: "Logo CIn UFPE",
     titleAcademic: "Bacharelado em Sistemas de Informação",
     educationalInstitution: "Centro de informática (Cin) - UFPE",
@@ -11,7 +11,7 @@ export const cinInfo = {
 }
 
 export const onebitcodeInfo = {
-  logo: "/education/onebitcodeLogo.png", 
+  logo: "/assets/images/education/onebitcodeLogo.png", 
   alt: "Logo da OneBitCode",
   titleAcademic: "Desenvolvimento Full-stack JS",
   educationalInstitution: "OneBitCode",
@@ -25,7 +25,7 @@ export const onebitcodeInfo = {
 };
 
 export const ifInfo = {
-    logo: "/education/IfLogo.png",
+    logo: "/assets/images/education/IfLogo.png",
     alt: "LogoIf",
     titleAcademic: "Curso Técnico em Informática",
     educationalInstitution: "Instituto Federal Baiano - Campus Lapa",

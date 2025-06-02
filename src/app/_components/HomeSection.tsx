@@ -73,7 +73,7 @@ function HomeSection() {
             <div className="relative w-52 sm:w-60 md:w-[80%] md:mb-10 md:ml-7" data-aos="fade-right" >
                 <div className='absolute h-[40%] w-[40%] blur-3xl  bg-gradient-to-tr from-[#8680C4] from-40% to-transparent  -z-20  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'></div>
                 <Image
-                    src="/ImgHomePortfolio.png"
+                    src="/assets/images/ImgHomePortfolio.png"
                     width={1000}
                     height={1000}
                     quality={100}
