@@ -16,7 +16,7 @@ function ResumePage() {
                         Tenho <span className='text-blue-300 font-semibold'>21 anos</span>, sou estudante do <span className='text-blue-300 font-semibold'>5ª período</span> de Sistemas de Informação no CIn/UFPE e apaixonado por tecnologia (no geral) desde o ensino médio integrado, quando tive o contato com a área durante o curso técnico em Informática.
                     </p>
                     <p>
-                        Possuo mais de <span className='text-blue-300 font-semibold'>2 anos de experiência</span> com <span className='font-semibold'>JavaScript</span>, <span className='font-semibold'>Python</span> e frameworks modernos (atualmente usando Next, React, Expres...), desenvolvendo sites e aplicativos com foco em boas práticas.
+                        Possuo mais de <span className='text-blue-300 font-semibold'>2 anos de experiência</span> com <span className='font-semibold'>JavaScript</span>, <span className='font-semibold'>Python</span> e frameworks modernos (atualmente usando Next, React, Express...), desenvolvendo sites e aplicativos com foco em boas práticas.
                     </p>
                     <p>
                         Atualmente, em paralelo com a faculdade, faço o curso da <span className='font-semibold text-blue-300'>OneBitCode</span> para me especializar ainda mais. No tempo livre, gosto de esportes como <span className='font-semibold'>futebol</span>, <span className='font-semibold'>corrida</span>, <span className='font-semibold'>academia</span> e de jogos — especialmente os clássicos ou com amigos.<br />

@@ -12,7 +12,7 @@ function ProjectCard({ project }: { project: propsProject }) {
             data-aos-anchor-placement="center-bottom">
             <div className='flex border-b-[1px] items-center overflow-hidden'>
                 <Image
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-fill"
                     src={srcImage}
                     priority
                     width={200}
@@ -35,7 +35,7 @@ function ProjectCard({ project }: { project: propsProject }) {
                         <button
                             className='py-2 px-4 border-[1px] border-[#77A2FF] rounded-md' >
                             <a target="_blank"
-                                href={deploy} className='flex items-center gap-1 font-poppins text-base md:text-sm text-center'>Deploy <IoRocketOutline />
+                                href={deploy} className='flex items-center gap-1 font-poppins text-base md:text-sm text-center'>Prévia <IoRocketOutline />
                             </a>
                         </button>
                     }

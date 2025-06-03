@@ -3,22 +3,17 @@ import { Box, CodeXml, Download, FileUser, GraduationCap, Wrench, Menu, X } from
 import React, { useEffect, useState } from 'react'
 import ButtonDownloadCV from './ButtonDownloadCV'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { useAnimation, motion } from 'motion/react'
 import Logo from './Logo'
 
 function Header() {
     const [openMenu, setOpenMenu] = useState<boolean>(false)
-    const pathname = usePathname();
     const delayItemsMenu = `transform transition-all duration-300 ease-out ${openMenu ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`
-    const addressRootLocal = "http://localhost:3000/"
-    const addressRootDeploy = "http://eduardomatos.vercel.app/"
-    // Mudar esse endereço depois que mudar o domínio
 
     const navItems = [
-        { path: '#projects', label: 'Projetos', icon: <Box size={20} /> },
-        { path: '#skills', label: 'Habilidades', icon: <Wrench size={20} /> },
-        { path: '#education', label: 'Formação', icon: <GraduationCap size={20} /> },
+        { path: '/#projects', label: 'Projetos', icon: <Box size={20} /> },
+        { path: '/#skills', label: 'Habilidades', icon: <Wrench size={20} /> },
+        { path: '/#education', label: 'Formação', icon: <GraduationCap size={20} /> },
         { path: '/resume', label: 'Sobre mim', icon: <FileUser size={20} /> },
     ];
     function handleMenu() {
@@ -76,11 +71,10 @@ function Header() {
                             {navItems.map((item) => (
                                 <Link
                                     key={item.path}
-                                    href={addressRootDeploy + item.path}
+                                    href={item.path}
                                     className={`
                                 flex flex-row gap-2 items-center 
-                                font-poppins font-light text-sm 
-                                ${pathname === item.path ? "text-[#5C96FF]" : ""} 
+                                font-poppins font-light text-sm  
                                 hover:text-[#5C96FF] transition-colors duration-150 ease
                             `}
                                 >
@@ -125,9 +119,9 @@ function Header() {
                     </button>
                 </div>
                 <ul className='flex flex-col gap-6 w-full px-4 mb-6'>
-                    <li key="home" className={delayItemsMenu} style={{ transitionDelay: `${100 + 0 * 100}ms` }}>
+                    <li key="home" className={delayItemsMenu} style={{ transitionDelay: "100ms" }}>
                         <Link
-                            href=""
+                            href="/"
                             className={`flex gap-2 
                                 font-light text-sm text-white
                                 hover:text-[#5C96FF] transition-colors
@@ -146,10 +140,9 @@ function Header() {
                             style={{ transitionDelay: `${100 + index * 100}ms` }}
                         >
                             <Link
-                                href={addressRootDeploy + item.path}
+                                href={item.path}
                                 className={`flex gap-2 
-                                font-light text-sm text-white
-                                ${pathname === item.path ? "text-[#5C96FF]" : ""} 
+                                font-light text-sm text-white 
                                 hover:text-[#5C96FF] transition-colors
                                  duration-150 ease`}
                                 onClick={() => setOpenMenu(false)}
