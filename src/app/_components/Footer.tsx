@@ -20,7 +20,7 @@ function Footer() {
                 <div className='flex flex-col gap-2 items-center'>
                     <p className='text-base md:text-lg font-extrabold '>Contato</p>
                     <div className='flex flex-col gap-2 justify-center '>
-                        <p className={styleContact}><MdOutlineMailOutline color="#fff" />emfs@cin.ufpe.br</p>
+                        <p className={styleContact}><MdOutlineMailOutline color="#fff" />eduardomatosdev@gmail.com</p>
                         <p className={styleContact}><MdOutlineLocalPhone />{`+55 (77) 9 9975-9806`}</p>
                     </div>
                 </div>

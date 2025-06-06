@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 import { AosInit } from "./_components/aos-init";
 import Header from "./_components/header/Header";
 import Footer from "./_components/Footer";
@@ -48,11 +49,11 @@ export default function RootLayout({
         <div className="flex justify-center max-w-[90%] sm:max-w-[90%] md:max-w-[51rem] mx-auto overflow-hidden">
           <Header />
           {children}
+          <Analytics/>
         </div>
         <Footer />
 
         <AosInit /> {/* Esse Aos quebra o layout no mobile, por isso se utiliza o overflow hidden acima*/}
-
       </body>
     </html>
   );

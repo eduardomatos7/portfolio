@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "aos": "^2.3.4",
     "ionicons": "^8.0.8",
     "lucide-react": "^0.511.0",

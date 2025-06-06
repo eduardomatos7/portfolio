@@ -33,10 +33,18 @@ function ProjectCard({ project }: { project: propsProject }) {
                 <div className='flex gap-4 mb-2'>
                     {deploy &&
                         <button
-                            className='py-2 px-4 border-[1px] border-[#77A2FF] rounded-md' >
-                            <a target="_blank"
-                                href={deploy} className='flex items-center gap-1 font-poppins text-base md:text-sm text-center'>Prévia <IoRocketOutline />
-                            </a>
+                            className="relative py-2 px-4 border-[1px] border-[#77A2FF] rounded-md overflow-hidden group transition-all duration-500 hover:scale-105 hover:shadow-[0_0_10px_rgba(27,122,255,0.5)]">
+                            <span className="relative">
+                                <a target="_blank"
+                                    href={deploy} className='flex items-center gap-1 font-poppins text-base md:text-sm text-center'>
+                                    Prévia <IoRocketOutline />
+                                </a>
+                            </span>
+                            <span className="pointer-events-none absolute -top-1/2 -left-1/2 w-[200%] h-[300%] 
+                            opacity-0 group-hover:opacity-100 transition-all duration-300 before:content-[''] 
+                            before:absolute before:inset-0 before:bg-gradient-to-tr before:from-cyan-400
+                             before:via-cyan-400/50 before:to-transparent before:rotate-[-45deg] 
+                             before:transition-all before:duration-300 group-hover:before:translate-y-full"></span>
                         </button>
                     }
 
