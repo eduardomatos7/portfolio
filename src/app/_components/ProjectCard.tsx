@@ -7,12 +7,12 @@ import { propsProject } from '../interfaces/projectCards';
 function ProjectCard({ project }: { project: propsProject }) {
     const { technologies, title, description, srcImage, github, deploy, platforms } = project
     return (
-        <div className=' h-[28rem] w-[85%] sm:w-[60%] lg:max-h-80  md:max-w-[33%] grid grid-rows-[4fr_1fr_4fr] border-[1px] border-gray-50 bg-white/5 rounded-lg overflow-hidden'
+        <div className=' h-[26rem] w-[85%] sm:w-[60%] lg:max-h-[22rem]  md:max-w-[31%] grid grid-rows-[4fr_1fr_4fr] border-[1px] border-gray-50 bg-white/5  overflow-hidden'
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom">
-            <div className='flex border-b-[1px] items-center overflow-hidden'>
+            <div className='flex relative border-b-[1px] items-center overflow-hidden'>
                 <Image
-                    className="w-full h-full object-fill"
+                    className="w-full h-full md:object-full"
                     src={srcImage}
                     priority
                     width={200}
