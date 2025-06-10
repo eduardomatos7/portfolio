@@ -15,7 +15,7 @@ function TechnologiesSkills({ title, technologies }: props) {
     return (
         <div className='flex flex-col gap-4 ' data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
-            data-aos-duration="300">
+            data-aos-duration="900">
             <div className='mt-7 sm:mt-12 md:mt-16 flex justify-center'>
                 <h1 className='text-white text-xl sm:text-xl md:text-2xl font-medium font-inter'>{title}</h1>
             </div>

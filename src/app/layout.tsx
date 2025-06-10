@@ -49,7 +49,7 @@ export default function RootLayout({
         <div className="flex justify-center max-w-[90%] sm:max-w-[90%] md:max-w-[51rem] mx-auto overflow-hidden">
           <Header />
           {children}
-          <Analytics/>
+          <Analytics />
         </div>
         <Footer />
 
