@@ -23,7 +23,7 @@ export const KanbanProject = {
 ],
     title: "Quadro Kanban",
     description: "Quadro kanban para gerenciar tarefas.",
-    srcImage: "/assets/images/projects/cover/KanbanTODO.png",
+    srcImage: "/assets/images/projects/cover/kanbanCover.png",
     deploy: "https://board-kanban-sigma.vercel.app/",
     github: "https://github.com/eduardomatos7/To-do-List-Kanban",
     platforms: "Front-end"
@@ -37,7 +37,7 @@ export const StockItems = {
 ],
     title: "Estoque de Itens",
     description: "Aplicação de gerenciamento de estoque.",
-    srcImage: "/assets/images/projects/cover/StockItens.png",
+    srcImage: "/assets/images/projects/cover/dashboard-cover.png",
     deploy: "https://stock-manager-alpha.vercel.app/",
     github: "https://github.com/eduardomatos7/stock-manager",
     platforms: "Front-end"
