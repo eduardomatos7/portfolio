@@ -75,7 +75,7 @@ function Header() {
                                     className={`
                                 flex flex-row gap-2 items-center 
                                 font-poppins font-light text-sm  
-                                hover:text-[#5C96FF] transition-colors duration-150 ease
+                                hoverUnderline
                             `}
                                 >
                                     {item.label}
