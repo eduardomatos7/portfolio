@@ -156,7 +156,7 @@ function Header() {
                         className={delayItemsMenu}
                         style={{ transitionDelay: `${100 + navItems.length * 100}ms` }}
                     >
-                        <Link href="/assets/pdf/emfs_curriculo.pdf" target='_blank'>
+                        <Link href="/assets/pdf/curriculo_att.pdf" target='_blank'>
                             <ButtonDownloadCV>
                                 <Download size={18} className="text-white" />
                                 Baixar CV
