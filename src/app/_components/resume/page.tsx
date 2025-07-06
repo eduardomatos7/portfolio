@@ -2,12 +2,12 @@ import React from 'react'
 
 function ResumePage() {
     return (
-        <section className='flex flex-col items-center gap-6 min-h-screen max-w-[90%] mx-auto justify-center text-white font-poppins py-20 '>
+        <section className='flex flex-col items-center gap-6 max-w-[90%] mx-auto justify-center text-white font-poppins py-20'>
             <h1 className='text-3xl font-poppins font-bold text-center my-2 tracking-wide' data-aos="fade-down">
                 <span className='text-white'>Sobre mim</span>
             </h1>
-            <div className='flex flex-col md:flex-row items-center gap-6 w-full' data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500">
-                <div className='flex flex-col gap-4 border-l-4 border-blue-600 bg-white/5 p-6 rounded-lg shadow-md w-full text-[15px] font-light'>
+            <div className='flex flex-col md:flex-row items-center gap-6 w-full' data-aos="fade-up" >
+                <div className='flex flex-col gap-4 border-l-4 border-blue-600 bg-white/5 p-6 rounded-r-md shadow-md w-full text-[15px] font-light'>
                     <div className='flex items-center gap-2 mb-1'>
                         <span className='text-blueborder-blue-600 text-xl'>😁</span>
                         <span className='font-semibold text-white'>Destaco meu resumo em algumas frases </span>
