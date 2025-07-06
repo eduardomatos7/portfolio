@@ -26,7 +26,7 @@ function TechnologiesSkills({ title, technologies }: props) {
             transition-all duration-300 ease-in-out'>
                 {technologies.map((tech, index) => (<div className='
                     flex flex-col gap-1 items-center p-2 
-                    hover:bg-[#4d79cb]/20 rounded-md cursor-pointer
+                    hover:bg-[#4d79cb]/20 rounded-md
                     shadow-sm hover:shadow-[0_0_15px_rgba(48,76,128,0.5)]
                     transition-all duration-300 ease-in-out'
                     key={tech.id}

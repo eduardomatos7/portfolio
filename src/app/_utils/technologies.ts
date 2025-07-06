@@ -47,4 +47,5 @@ export const toolsPlatform = [
     { id: "3", tech: "/assets/images/techs/docker.png", alt: "Docker" },
     { id: "4", tech: "/assets/images/techs/dbeaver.png", alt: "Dbeaver" },
     { id: "5", tech: "/assets/images/techs/postman.png", alt: "Postman" },
+    { id: "6", tech: "/assets/images/techs/jest.png", alt: "Jest" },
 ]
