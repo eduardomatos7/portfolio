@@ -4,6 +4,7 @@ import SkillsPage from "./SkillsPage";
 import Projects from "./ProjectContent";
 import EducationPage from "./EducationPage/EducationPage";
 import HomeSection from "./HomeSection";
+import ResumePage from "./resume/page";
 
 function HomePage() {
     return (
@@ -18,6 +19,9 @@ function HomePage() {
             <section id="skills" className=" mt-16 md:mt-32 pb-10 min-h-screen scroll-mt-16">
                 <SkillsPage />
             </section >
+            <section id="resume">
+                <ResumePage />
+            </section>
             <section id="education" className=" mt-16 md:mt-32 min-h-screen scroll-mt-6">
                 <EducationPage />
             </section >

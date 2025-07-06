@@ -14,7 +14,7 @@ function Header() {
         { path: '/#projects', label: 'Projetos', icon: <Box size={20} /> },
         { path: '/#skills', label: 'Habilidades', icon: <Wrench size={20} /> },
         { path: '/#education', label: 'Formação', icon: <GraduationCap size={20} /> },
-        { path: '/resume', label: 'Sobre mim', icon: <FileUser size={20} /> },
+        { path: '/#resume', label: 'Sobre mim', icon: <FileUser size={20} /> },
     ];
     function handleMenu() {
         setOpenMenu(!openMenu)
