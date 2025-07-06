@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable}`}>
       <body
-        className="h-screen bg-repeat-space"
+        className=""
         style={{
           background: "linear-gradient(to bottom, #010028 0%, #122152 41%, #07174A 68%, #010028 100%)"
         }}
