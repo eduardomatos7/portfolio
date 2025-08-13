@@ -33,7 +33,7 @@ export const medicAppProject = {
   ],
   title: "MedicApp",
   description: "Aplicativo para verificar interações entre medicamentos.",
-  srcImage: "/assets/images/projects/cover/medicappImage.png",
+  srcImage: "/assets/images/projects/cover/MedicAppCover.png",
   github: "https://github.com/RicardoMorato/MedicApp",
   platforms: "Mobile",
 };
@@ -44,6 +44,18 @@ export const TnSeq = {
       id: "4",
       tech: "/assets/images/techs/typescript.png",
       alt: "Typescript",
+      width: 20,
+    },
+    {
+      id: "99",
+      tech: "/assets/images/projects/vite.png",
+      alt: "Vite",
+      width: 20,
+    },
+    {
+      id: "1",
+      tech: "/assets/images/techs/logos--react.png",
+      alt: "React",
       width: 20,
     },
     {
@@ -70,7 +82,7 @@ export const TnSeq = {
 export const LeveSaude = {
   technologies: [
     {
-      id: "4",
+      id: "10",
       tech: "/assets/images/techs/typescript.png",
       alt: "Typescript",
       width: 20,
@@ -93,10 +105,22 @@ export const LeveSaude = {
       alt: "Tailwind CSS",
       width: 20,
     },
+    {
+      id: "4",
+      tech: "/assets/images/projects/vite.png",
+      alt: "Vite",
+      width: 20,
+    },
+    {
+      id: "1",
+      tech: "/assets/images/techs/logos--react.png",
+      alt: "React",
+      width: 20,
+    },
   ],
   title: "Leve Saúde",
   description:
-    "Aplicativo para avaliações, Login. Área admin Web para gerenciamento e visualização de dashboard.",
+    "Aplicativo para avaliaçõe e página adm web para visualizar avaliações.",
   srcImage: "/assets/images/projects/cover/MockupLeveSaude-cover.svg",
   deploy: "https://test-web-leve-saude-eta.vercel.app/login",
   github: "https://github.com/eduardomatos7/test-leve-saude",

@@ -29,10 +29,10 @@ function ProjectCard({ project }: { project: propsProject }) {
           alt={title}
         />
       </div>
-      <div className="border-b-[1px] flex gap-3 p-2 md:gap-5 px-3 justify-center items-center overflow-hidden">
+      <div className="border-b-[1px] flex gap-3 p-2 justify-evenly md:gap-5 px-3 md:justify-center items-center overflow-hidden">
         {technologies.map(({ tech, width, alt, id }) => (
           <Image
-            className="object-contain max-h-8 md:max-h-6 w-auto"
+            className="object-contain max-h-6 md:max-w-none md:max-h-6 w-auto"
             src={tech}
             width={width}
             height={20}
