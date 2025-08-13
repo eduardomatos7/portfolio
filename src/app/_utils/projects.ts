@@ -61,8 +61,8 @@ export const TnSeq = {
   ],
   title: "TnSeq Analyzer",
   description:
-    "Aplicativo Desktop para análise de dados de sequenciamento de transposons.",
-  srcImage: "/assets/images/projects/cover/tnSeq-cover.svg",
+    "Aplicativo Desktop para análise de dados e sequenciamento de transposons.",
+  srcImage: "/assets/images/projects/cover/TnSeqCover.svg",
   github: "https://github.com/TN-Seq-Analyzer/tnseq-analyzer",
   platforms: "Desktop",
 };
@@ -96,7 +96,7 @@ export const LeveSaude = {
   ],
   title: "Leve Saúde",
   description:
-    "Aplitivo para avaliações e Login e área admin para gerenciamento e visualização de dashboard.",
+    "Aplicativo para avaliações, Login. Área admin Web para gerenciamento e visualização de dashboard.",
   srcImage: "/assets/images/projects/cover/MockupLeveSaude-cover.svg",
   deploy: "https://test-web-leve-saude-eta.vercel.app/login",
   github: "https://github.com/eduardomatos7/test-leve-saude",
