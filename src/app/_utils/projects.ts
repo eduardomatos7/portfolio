@@ -120,7 +120,7 @@ export const LeveSaude = {
   ],
   title: "Leve Saúde",
   description:
-    "Aplicativo para avaliaçõe e página adm web para visualizar avaliações.",
+    "App para envio de avaliações e painel adm web com dashboard para análise dos resultados.",
   srcImage: "/assets/images/projects/cover/MockupLeveSaude-cover.svg",
   deploy: "https://test-web-leve-saude-eta.vercel.app/login",
   github: "https://github.com/eduardomatos7/test-leve-saude",
@@ -225,7 +225,7 @@ export const LeadsAPI = {
     },
   ],
   title: "Leads Manager",
-  description: "API RESTful para gerenciamento completo de leads de marketing",
+  description: "API RESTful para gerenciamento completo de leads de marketing.",
   srcImage: "/assets/images/projects/cover/backend.png",
   github: "https://github.com/eduardomatos7/leads-api",
   platforms: "Back-end",
