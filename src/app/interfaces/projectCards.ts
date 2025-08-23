@@ -10,5 +10,6 @@ export interface propsProject {
     srcImage: string,
     github: string,
     deploy?: string | undefined,
-    platforms: string
+    platforms: string,
+    video?: string
 }
