@@ -83,7 +83,7 @@ function Header() {
                             ))}
                         </div>
                         <a
-                            href="assets/pdf/currículo.pdf"
+                            href="assets/pdf/curriculo.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -161,7 +161,7 @@ function Header() {
                         style={{ transitionDelay: `${100 + navItems.length * 100}ms` }}
                     >
                         <a
-                            href="assets/pdf/currículo.pdf"
+                            href="assets/pdf/curriculo.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

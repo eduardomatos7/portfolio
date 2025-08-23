@@ -39,14 +39,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable}`}>
+    <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} overflow-x-hidden`}>
       <body
-        className=""
+        className="overflow-x-hidden"
         style={{
-          background: "linear-gradient(to bottom, #010028 0%, #122152 41%, #07174A 68%, #010028 100%)"
+          background: "linear-gradient(to bottom, #010028 0%, #122152 41%, #060447 68%, #010028 100%)"
         }}
       >
-        <div className="flex flex-col justify-center max-w-[90%] sm:max-w-[90%] md:max-w-[75%] mx-auto ">
+        <div className="flex flex-col justify-center max-w-[90%] sm:max-w-[90%] lg:max-w-[75%] mx-auto">
           <Header />
           {children}
           <Analytics />
