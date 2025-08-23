@@ -1,31 +1,51 @@
-import React from 'react'
+"use client";
+import React from "react";
+import { motion } from "motion/react";
+import { container, item } from "../../_utils/variants";
+import { stats, hobbies, bioParagraphs, timeline } from "../../_utils/data";
+import ProfileCard from "./ProfileCard";
+import StatsGrid from "./StatsGrid";
+import Hobbies from "./Hobbies";
+import BioSection from "./BioSection";
+import Timeline from "./Timeline";
 
 function ResumePage() {
-    return (
-        <section className='flex flex-col items-center gap-6 max-w-[90%] mx-auto justify-center text-white font-poppins py-20'>
-            <h1 className='text-3xl font-poppins font-bold text-center my-2 tracking-wide' data-aos="fade-down">
-                <span className='text-white'>Sobre mim</span>
-            </h1>
-            <div className='flex flex-col md:flex-row items-center gap-6 w-full' data-aos="fade-up" >
-                <div className='flex flex-col gap-4 border-l-4 border-blue-600 bg-white/5 p-6 rounded-r-md shadow-md w-full text-[15px] font-light'>
-                    <div className='flex items-center gap-2 mb-1'>
-                        <span className='text-blueborder-blue-600 text-xl'>😁</span>
-                        <span className='font-semibold text-white'>Destaco meu resumo em algumas frases </span>
-                    </div>
-                    <p>
-                        Tenho <span className='text-blue-300 font-semibold'>21 anos</span>, sou estudante do <span className='text-blue-300 font-semibold'>5ª período</span> de Sistemas de Informação no CIn/UFPE e apaixonado por tecnologia (no geral) desde o ensino médio integrado, quando tive o contato com a área durante o curso técnico em Informática.
-                    </p>
-                    <p>
-                        Possuo mais de <span className='text-blue-300 font-semibold'>2 anos de experiência</span> com <span className='font-semibold'>JavaScript</span>, <span className='font-semibold'>Python</span> e frameworks modernos (atualmente usando Next, React, Express...), desenvolvendo sites e aplicativos com foco em boas práticas.
-                    </p>
-                    <p>
-                        Atualmente, em paralelo com a faculdade, faço o curso da <span className='font-semibold text-blue-300'>OneBitCode</span> para me especializar ainda mais. No tempo livre, gosto de esportes como <span className='font-semibold'>futebol</span>, <span className='font-semibold'>corrida</span>, <span className='font-semibold'>academia</span> e de jogos — especialmente os clássicos ou com amigos.<br />
-                        Meu objetivo atual é criar <span className='font-semibold underline'>soluções de qualidade</span>, tanto para web quanto para mobile.
-                    </p>
-                </div>
-            </div>
-        </section >
-    )
+  return (
+    <section id="resume" className="relative py-24 w-full flex justify-center overflow-hidden">
+      {/* Background Lights */}
+      <div className="pointer-events-none absolute inset-0 [mask-image:radial-gradient(circle_at_center,white,transparent_70%)]">
+        <div className="absolute -top-32 -left-32 size-[420px] bg-blue-600/30 blur-[120px] rounded-full animate-pulse" />
+        <div className="absolute bottom-0 -right-32 size-[420px] bg-indigo-500/25 blur-[140px] rounded-full animate-pulse [animation-delay:2s]" />
+      </div>
+
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        className="relative flex flex-col gap-12 max-w-[92%] lg:max-w-[70%] text-white font-poppins"
+      >
+        <motion.h1 variants={item} className="text-2xl xl:text-4xl font-normal tracking-tight text-center mb-5">
+          <span className="text-white">Me conheça um pouco mais: </span>
+        </motion.h1>
+
+        <div className="grid md:grid-cols-[340px_1fr] gap-10 items-start">
+          {/* Coluna esquerda */}
+          <motion.div variants={item} className="flex flex-col gap-6">
+            <ProfileCard />
+            <StatsGrid stats={stats} />
+            <Hobbies hobbies={hobbies} />
+          </motion.div>
+
+            {/* Coluna direita */}
+            <motion.div variants={item} className="flex flex-col gap-8">
+              <BioSection paragraphs={bioParagraphs} />
+              <Timeline points={timeline} />
+            </motion.div>
+        </div>
+      </motion.div>
+    </section>
+  );
 }
 
-export default ResumePage
+export default ResumePage;
