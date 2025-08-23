@@ -14,7 +14,7 @@ export const medicAppProject = {
     },
     {
       id: "3",
-      tech: "/assets/images/projects/fastapiNameIcon.png",
+      tech: "/assets/images/projects/fastapi.png",
       alt: "FastAPI",
       width: 50,
     },
@@ -27,14 +27,15 @@ export const medicAppProject = {
     {
       id: "5",
       tech: "/assets/images/techs/postgres.png",
-      alt: "Postgres.png",
+      alt: "Postgresql",
       width: 20,
     },
   ],
   title: "MedicApp",
   description: "Aplicativo para verificar interações entre medicamentos.",
-  srcImage: "/assets/images/projects/cover/MedicAppCover.png",
+  srcImage: "/assets/images/projects/cover/medicapp.png",
   github: "https://github.com/RicardoMorato/MedicApp",
+  video: "/assets/videos/medicapp.mp4",
   platforms: "Mobile",
 };
 
@@ -124,6 +125,7 @@ export const LeveSaude = {
   srcImage: "/assets/images/projects/cover/MockupLeveSaude-cover.svg",
   deploy: "https://test-web-leve-saude-eta.vercel.app/login",
   github: "https://github.com/eduardomatos7/test-leve-saude",
+  video: "/assets/videos/Login_e_Avaliacao.mp4",
   platforms: "Front/Mobile",
 };
 
