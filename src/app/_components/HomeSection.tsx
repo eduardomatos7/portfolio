@@ -24,8 +24,8 @@ function HomeSection() {
                             Desenvolvedor de Software
                         </h2>
                         <p className="mt-2 max-w-xl text-base sm:text-lg leading-relaxed font-poppins text-slate-200/90 font-extralight">
-                            Desenvolvedor <b>Full-Stack</b> e estudante de <b>Sistemas de Informação</b> no CIn/UFPE. Busco criar soluções digitais
-                            que aliem <span className="text-sky-400 font-medium">qualidade</span>, <span className="text-sky-400 font-medium">performance</span> e impacto real.
+                            Desenvolvedor <b>Full-Stack</b> e estudante de <b>Sistemas de Informação</b> no CIn/UFPE. Crio aplicativos, sites <b>dinâmicos</b> e <b>animados</b>, ou qualquer solução digital, que unem
+                            <span className="text-sky-400 font-medium"> qualidade</span>, <span className="text-sky-400 font-medium">performance</span> e <span className="text-sky-400 font-medium">impacto real</span>.
                         </p>
 
                         {/* Social */}

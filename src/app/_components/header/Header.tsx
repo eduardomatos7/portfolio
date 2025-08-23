@@ -1,5 +1,5 @@
 "use client"
-import { Box, CodeXml, Download, FileUser, GraduationCap, Wrench, Menu, X } from 'lucide-react'
+import { Box, CodeXml, FileUser, GraduationCap, Wrench, Menu, X, ArrowUpRight } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import ButtonDownloadCV from './ButtonDownloadCV'
 import Link from 'next/link'
@@ -43,7 +43,7 @@ function Header() {
 
 
     return (
-        <div className='fixed top-0 w-[90%] z-10 md:w-[51rem]'>
+        <div className='fixed top-0 w-[90%] z-10 lg:w-[75%]'>
             <div className="flex justify-center relative">
                 {openMenu && (
                     <div
@@ -56,25 +56,25 @@ function Header() {
                     initial={{ y: 0 }}
                     transition={{ duration: 0.25 }}
                     className="
-                h-16 w-full
+                h-16 md:h-20 w-full
                 gap-[35px] justify-center
                 bg-[#121237] text-white font-poppins
                 rounded-b-xl animated-border">
                     <nav className="
-                        hidden md:flex
-                        h-16 min-w-fit px-10
-                        gap-[35px] justify-between items-center 
+                        hidden md:flex sm:min-w-full
+                        h-16 md:h-20 min-w-fit px-10
+                        gap-[35px] justify-around items-center 
                         bg-[#121237] text-white font-poppins
                         rounded-b-xl ">
                         <Logo />
-                        <div className='flex gap-9'>
+                        <div className='flex xl:gap-16 lg:gap-9 md:gap-6'>
                             {navItems.map((item) => (
                                 <Link
                                     key={item.path}
                                     href={item.path}
                                     className={`
                                 flex flex-row gap-2 items-center 
-                                font-poppins font-light text-sm  
+                                font-poppins font-light text-sm md:text-sm xl:text-base  
                                 hoverUnderline
                             `}
                                 >
@@ -82,12 +82,16 @@ function Header() {
                                 </Link>
                             ))}
                         </div>
-                        <Link href="/assets/pdf/curriculo_att.pdf" target='_blank'>
+                        <a
+                            href="assets/pdf/currículo.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <ButtonDownloadCV>
-                                <Download size={18} className="text-white" />
-                                Baixar CV
+                                <ArrowUpRight size={15} className="text-white transition-transform duration-300 group-hover:translate-x-1" />
+                                Ver Currículo
                             </ButtonDownloadCV>
-                        </Link>
+                        </a>
                     </nav>
 
                     <nav
@@ -156,12 +160,16 @@ function Header() {
                         className={delayItemsMenu}
                         style={{ transitionDelay: `${100 + navItems.length * 100}ms` }}
                     >
-                        <Link href="/assets/pdf/curriculo_att.pdf" target='_blank'>
+                        <a
+                            href="assets/pdf/currículo.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <ButtonDownloadCV>
-                                <Download size={18} className="text-white" />
-                                Baixar CV
+                                <ArrowUpRight size={18} className="text-white transition-transform duration-300 group-hover:translate-x-1" />
+                                Ver Currículo
                             </ButtonDownloadCV>
-                        </Link>
+                        </a>
                     </div>
                 </ul>
             </div>

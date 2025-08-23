@@ -13,7 +13,7 @@ interface props {
 
 function TechnologiesSkills({ title, technologies }: props) {
     return (
-        <div className='flex flex-col gap-4 ' data-aos="fade-left"
+        <div className='flex flex-col gap-4 lg:max-w-[80%] mx-auto' data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="900">
             <div className='mt-7 sm:mt-12 md:mt-16 flex justify-center'>
@@ -22,7 +22,8 @@ function TechnologiesSkills({ title, technologies }: props) {
             <div className='
             flex flex-wrap w-full justify-center items-center
             overflow-hidden gap-2 lg:gap-4 p-4 h-max
-            bg-white bg-opacity-10 rounded-lg
+            ring-1 ring-white/10 shadow-xl shadow-blue-900/30 bg-gradient-to-br 
+            from-white/10 to-white/5 backdrop-blur-sm rounded-lg
             transition-all duration-300 ease-in-out'>
                 {technologies.map((tech, index) => (<div className='
                     flex flex-col gap-1 items-center p-2 
