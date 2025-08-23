@@ -42,9 +42,14 @@ html {
   animation: gradientAnimation 4s linear infinite;
   z-index: -1;
   border-radius: 0.75rem;
+  
 }
-.animated-border-divider::before {
+@media (min-width: 768px) {
+  .animated-border::after {
+    height: 5rem; /* desktop */
+  }
 }
+
 @keyframes carousel {
   from {
     transform: translateX(0%);
@@ -115,3 +120,30 @@ html {
 .hoverUnderline:hover::before {
   width: 50%;
 } */
+
+@keyframes dropIn3D {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -55px, 90px) rotateX(55deg) scale(0.3);
+  }
+  60% {
+    opacity: .5;
+    transform: translate3d(0, -100px, 0) rotateX(0deg) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotateX(0deg) scale(1);
+  }
+}
+
+.slide-enter-right {
+  animation: dropIn3D 0.7s cubic-bezier(0.25, 0.9, 0.35, 1.15);
+  transform-origin: top center;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 800px;
+}
+
+.slide-enter-right.replaying {
+  animation: none;
+}
