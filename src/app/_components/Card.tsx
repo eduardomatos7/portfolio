@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { IoRocketOutline } from "react-icons/io5";
 import { propsProject } from "../interfaces/projectCards";
 import { Smartphone, MonitorSmartphone, Server, Monitor } from "lucide-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Video } from "lucide-react";
 import VideoModal from "./VideoModal";
 
@@ -44,8 +44,6 @@ function Card({ project }: { project: propsProject }) {
     return false;
   };
 
-  const mobileWidth = window.innerWidth === 768;
-
   return (
     <section
       className="relative w-full xl:w-[90%] max-h-fit mx-auto min-h-[80vh]  lg:min-h-[50vh] flex flex-col lg:grid lg:grid-cols-2 
@@ -53,7 +51,7 @@ function Card({ project }: { project: propsProject }) {
        backdrop-blur-sm"
       data-aos="fade-up"
       data-aos-duration="1300"
-      data-aos-anchor-placement={`${mobileWidth ? "center-bottom" : "top-center"}`}
+      data-aos-anchor-placement="top-center"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgba(28,116,168,0.18),transparent_62%)]" />
       <div className="pointer-events-none absolute inset-0 mix-blend-overlay opacity-10 bg-[linear-gradient(125deg,rgba(255,255,255,0.04)_0%,transparent_70%)]" />
