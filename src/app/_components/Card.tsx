@@ -44,26 +44,29 @@ function Card({ project }: { project: propsProject }) {
     return false;
   };
 
+  const mobileWidth = window.innerWidth === 768;
+
   return (
     <section
       className="relative w-full xl:w-[90%] max-h-fit mx-auto min-h-[80vh]  lg:min-h-[50vh] flex flex-col lg:grid lg:grid-cols-2 
       rounded-3xl overflow-hidden border border-white/5 shadow-[0_0_38px_-16px_rgba(18,80,160,0.35),0_0_52px_-30px_rgba(255,140,40,0.28)] 
        backdrop-blur-sm"
       data-aos="fade-up"
-      data-aos-anchor-placement="bottom-bottom"
+      data-aos-duration="1300"
+      data-aos-anchor-placement={`${mobileWidth ? "center-bottom" : "top-center"}`}
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgba(28,116,168,0.18),transparent_62%)]" />
       <div className="pointer-events-none absolute inset-0 mix-blend-overlay opacity-10 bg-[linear-gradient(125deg,rgba(255,255,255,0.04)_0%,transparent_70%)]" />
 
-      <div className="relative h-[33vh] sm:h-[50vh] lg:h-full flex items-center justify-center p-6 lg:p-10 bg-[#061120]/30 rounded-3xl overflow-hidden">
+      <div className="
+      relative h-[33vh] sm:h-[50vh] lg:h-full flex items-center justify-center p-6 lg:p-10 bg-[#061120]/30 rounded-3xl overflow-hidden 
+      ring-1 ring-white/10 shadow-[4px_4px_15px_rgba(30,64,175,0.3)] hover:shadow-[6px_6px_20px_rgba(30,64,175,0.6)] transition-all duration-700 ease-in-out">
         <Image
           src={srcImage}
           alt={title}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 50vw"
-          className={`${
-            coverImage() ? "object-cover" : " "
-          } drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-700 ease-out hover:scale-[1.03]`}
+          className={`${ coverImage() && "object-cover" }`}
         />
         <div className="absolute inset-0 ring-1 ring-white/10 rounded-3xl" />
       </div>
@@ -71,8 +74,10 @@ function Card({ project }: { project: propsProject }) {
       <div className="relative flex flex-col gap-6 p-6 sm:p-10 xl:p-14">
         <header className="space-y-3">
           <div className="flex flex-wrap items-center gap-3">
-            <h2 className="text-3xl md:text-3xl lg:text-4xl font-semibold tracking-tight font-inter bg-gradient-to-r
-             from-sky-200 via-cyan-100 to-blue-200 bg-clip-text text-transparent drop-shadow-[0_0_6px_rgba(0,180,255,0.15)]">
+            <h2
+              className="text-3xl md:text-3xl lg:text-4xl font-semibold tracking-tight font-inter bg-gradient-to-r
+             from-sky-200 via-cyan-100 to-blue-200 bg-clip-text text-transparent drop-shadow-[0_0_6px_rgba(0,180,255,0.15)]"
+            >
               {title}
             </h2>
 
@@ -162,10 +167,10 @@ function Card({ project }: { project: propsProject }) {
         <VideoModal
           open={openVideo}
           onClose={() => setOpenVideo(false)}
-            video={video}
-            title={`Vídeo - ${title}`}
-            originRect={originRect}
-          />
+          video={video}
+          title={`Vídeo - ${title}`}
+          originRect={originRect}
+        />
       )}
     </section>
   );

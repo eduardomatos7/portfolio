@@ -14,9 +14,9 @@ export const stats: StatItem[] = [
 export const hobbies = ["Futebol", "Corrida", "Academia", "Jogos", '"Codar"'];
 
 export const bioParagraphs: string[] = [
-  "Tenho 22 anos, curso o 6º período de Sistemas de Informação no CIn/UFPE e sou apaixonado por tecnologia (no geral) desde o ensino médio integrado, quando tive o contato com a área durante o curso técnico em Informática..",
-  "+2 anos com JavaScript, Python e Frameworks e libs (Next, React, Express...). Foco em animações, clean code e boas práticas.",
-  "Paralelo à faculdade, às vezes faço alguns cursos na OneBitCode. Nos tempos livres pratico esportes e jogos com amigos",
+  "Tenho 22 anos, curso o 6º período de Sistemas de Informação no CIn/UFPE e sou apaixonado por tecnologia (no geral) desde o ensino médio integrado, quando tive o contato com a área durante o curso técnico em Informática.",
+  "+2 anos com JavaScript, Python e Frameworks e libs (Next, React, Express...). Foco em animações, clean code e boas práticas de Engenharia de Software.",
+  "Paralelo à faculdade, às vezes faço alguns cursos na OneBitCode. Nos tempos livres pratico esportes e jogos com amigos.",
 ];
 
 export interface TimelinePoint {

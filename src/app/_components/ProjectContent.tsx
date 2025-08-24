@@ -19,8 +19,7 @@ function Projects() {
         data-aos="fade-up"
       >
         Confira meus principais projetos desenvolvidos, tanto no front-end
-        quanto no back-end. Você pode ver vídeos mostrando na prática o uso da
-        aplicação, testar você mesmo, através do deploy (previa) e também pode acessar o github para ver
+        quanto no back-end. Você pode ver vídeos demonstrando o uso da aplicação na prática, testar você mesmo por meio do deploy (previa) e também pode acessar o github para ver
         mais detalhes sobre cada projeto.
       </p>
       <div className="flex flex-col gap-16 items-center">
